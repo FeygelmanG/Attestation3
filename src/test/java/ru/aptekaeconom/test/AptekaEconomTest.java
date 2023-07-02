@@ -3,6 +3,7 @@ package ru.aptekaeconom.test;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,6 +21,8 @@ public class AptekaEconomTest extends WebTest {
     CityPopup cityPopup = new CityPopup();
     CatalogPage catalogPage = new CatalogPage();
 
+    SearchPage searchPage = new SearchPage();
+
     @BeforeEach
     public void setSelenide() {
         open("https://aptekaeconom.com");
@@ -28,19 +31,20 @@ public class AptekaEconomTest extends WebTest {
         cityPopup.modal.shouldNotBe(visible);
     }
 
+    // Тест 1 - Каталог
+    // При переходе в любую подкатегорию каталога, открывается страница хотя бы с 1 товаром в списке товаров категории.
+    // Хлебные крошки отображаются корректно, в каталогах в левой и верхней части страницы текущая подкатегория
+    // отображается корректно
     @Test
     @DisplayName("Переход по подкатегориям в каталоге товаров")
     @Feature("Каталог товаров")
     @Story("Подкатегории")
     public void shouldOpenCatalogTab() {
 
-        step("Навести курсор на каталог \"Гигиена\"", () -> {
-            mainPage.hoverCatalog("Гигиена");
-        });
+        step("Навести курсор на каталог \"Гигиена\"", () -> mainPage.hoverCatalog("Гигиена"));
 
-        step("Кликнуть на подкатегорию \"Детская косметика, гигиена, уход\" в каталоге \"Гигиена\"", () -> {
-            mainPage.clickSubCatalog("Гигиена", "Детская косметика, гигиена, уход");
-        });
+        step("Кликнуть на подкатегорию \"Детская косметика, гигиена, уход\" в каталоге \"Гигиена\"", () ->
+                mainPage.clickSubCatalog("Гигиена", "Детская косметика, гигиена, уход"));
 
         step("Проверить, что произошел переход на страницу товаров подкатегории \"Детская косметика, гигиена, " +
                 "уход\" в каталоге \"Гигиена\" (в влевой верхней части страницы текущая подкатегория отображается " +
@@ -53,11 +57,52 @@ public class AptekaEconomTest extends WebTest {
         });
 
         step("Проверить, что хлебные крошки отображаются корректно", () -> {
-//            catalogPage.itemsBreadcrumb.shouldBe(CollectionCondition.size(4));
-            ElementsCollection temsBreadcrumb = catalogPage.itemsBreadcrumb;
+            ElementsCollection itemsBreadcrumb = catalogPage.itemsBreadcrumb;
 
-            temsBreadcrumb.get(0).shouldHave(text("Главная"));
-            temsBreadcrumb.get(1).shouldHave(text("Каталог"));
+            itemsBreadcrumb.shouldBe(CollectionCondition.size(4));
+
+            itemsBreadcrumb.get(0).shouldHave(text("Главная"));
+            itemsBreadcrumb.get(1).shouldHave(text("Каталог"));
+            itemsBreadcrumb.get(2).shouldHave(text("Гигиена"));
+            itemsBreadcrumb.get(3).shouldHave(text("Детская косметика, гигиена, уход"));
+        });
+
+    }
+
+    //Тест 2 - Поиск
+    // Поиск ищет товары только по полному совпадению слова или словосочетания. В поисковой выдаче отображается по 5
+    // товаров на странице
+    @Test
+    @DisplayName("Поиск товаров по полному совпадению, вывод 5 позиций")
+    @Feature("Поиск товаров")
+    public void shouldSearchProductsOnlyByExact() {
+
+        step("Ввести \"нурофен\" в поле поиска", () -> mainPage.inputSearchText("нурофен"));
+
+        step("Проверить, что поиск ищет товары только по полному совпадению слова или словосочетания." +
+                "В поисковой выдаче отображается по 5 товаров на странице.", () -> {
+            ElementsCollection itemsSearch = searchPage.itemsSearch;
+            itemsSearch.shouldBe(CollectionCondition.size(1));
+            for (SelenideElement element : itemsSearch) {
+                element.shouldHave(text("нурофен"));
+            }
+        });
+    }
+    //Тест 3 - Отложить.
+    // Товар, который есть в наличии можно отложить, нажав на кнопку с иконкой сердечка и текстом “Отложить” на
+    // карточке товара. Отложенный товар появляется с пометкой “Товар отложен” в корзине, перейти в которую можно по
+    // кнопке в шапке. При наведении курсора на эту кнопку появляется корректный текст о сумме товаров в избранном.
+    // Отложенный товар не учитывается в итоговой сумме заказа
+    @Test
+    @DisplayName("Отложить товар, товар появляется в корзине, не учитывается в сумме заказа и выводится корректный " +
+            "текст при наведении на кнопку отложить")
+    @Feature("Отложить товар")
+    public void shouldPostponeGoods() {
+
+        step("Получить существующий товар ", () -> {
+            ElementsCollection itemsBlock = mainPage.itemsBlock;
+            itemsBlock.shouldBe(CollectionCondition.size(1));
+            itemsBlock.get(0).shouldHave(text("В наличии"));
         });
 
     }
