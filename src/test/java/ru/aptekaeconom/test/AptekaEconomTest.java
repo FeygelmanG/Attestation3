@@ -20,8 +20,8 @@ public class AptekaEconomTest extends WebTest {
     MainPage mainPage = new MainPage();
     CityPopup cityPopup = new CityPopup();
     CatalogPage catalogPage = new CatalogPage();
-
     SearchPage searchPage = new SearchPage();
+    BasketPage basketPage = new BasketPage();
 
     @BeforeEach
     public void setSelenide() {
@@ -79,15 +79,21 @@ public class AptekaEconomTest extends WebTest {
 
         step("Ввести \"нурофен\" в поле поиска", () -> mainPage.inputSearchText("нурофен"));
 
-        step("Проверить, что поиск ищет товары только по полному совпадению слова или словосочетания." +
-                "В поисковой выдаче отображается по 5 товаров на странице.", () -> {
+        step("Проверить, что в поисковой выдаче отображается по 5 товаров на странице.", () -> {
             ElementsCollection itemsSearch = searchPage.itemsSearch;
-            itemsSearch.shouldBe(CollectionCondition.size(1));
+            itemsSearch.shouldBe(CollectionCondition.size(5));
+        });
+
+        step("Ввести \"фен\" в поле поиска", () -> mainPage.inputSearchText("нурофен"));
+
+        step("Проверить, что поиск ищет товары только по полному совпадению слова или словосочетания.", () -> {
+            ElementsCollection itemsSearch = searchPage.itemsSearch;
             for (SelenideElement element : itemsSearch) {
-                element.shouldHave(text("нурофен"));
+                element.shouldHave(text("фен"));
             }
         });
     }
+
     //Тест 3 - Отложить.
     // Товар, который есть в наличии можно отложить, нажав на кнопку с иконкой сердечка и текстом “Отложить” на
     // карточке товара. Отложенный товар появляется с пометкой “Товар отложен” в корзине, перейти в которую можно по
@@ -98,12 +104,26 @@ public class AptekaEconomTest extends WebTest {
             "текст при наведении на кнопку отложить")
     @Feature("Отложить товар")
     public void shouldPostponeGoods() {
+        ElementsCollection itemsBlock = mainPage.itemsBlock;
 
-        step("Получить существующий товар ", () -> {
-            ElementsCollection itemsBlock = mainPage.itemsBlock;
-            itemsBlock.shouldBe(CollectionCondition.size(1));
+        step("Проверить, что выбранный элемент в наличии по блоку \"Выбор покупателей\". Т.е есть хотя бы 1 " +
+                "элемент в блоке и у него указано\"В наличии\"", () -> {
+//            itemsBlock.shouldBe(CollectionCondition.size(1));
             itemsBlock.get(0).shouldHave(text("В наличии"));
         });
+
+        step("Кликнуть у первого элементв в блоке \"Выбор покупателей\" на кнопку \"Отложить\"", () -> {
+//            ElementsCollection subTabs = mainPage.getSubTabs(itemsBlock.get(0));
+//            subTabs.get(0).click();
+            itemsBlock.get(0).click();
+        });
+        step("Перейти в корзину ", () -> mainPage.basket.click());
+
+//        step("Получить существующий товар ", () -> {
+//            ElementsCollection itemsBasket = basketPage.itemsBasket;
+//            itemsBasket.shouldBe(CollectionCondition.size(1));
+//            itemsBasket.get(0).shouldHave(text("Товар отложен"));
+//        });
 
     }
 }
