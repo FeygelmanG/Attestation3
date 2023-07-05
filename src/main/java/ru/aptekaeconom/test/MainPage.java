@@ -4,15 +4,18 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
-//    ElementsCollection itemsBlock =
-//            $$x("//div[@class=\"catalog_block items row margin0 ajax_load block\"]");
     ElementsCollection itemsBlock =
-            $$x("//div[@class=\"catalog_block items row margin0 ajax_load block\"]//div[@class=\"col-m-20 col-lg-3 col-md-4 col-sm-6 item item_block\"]");
-
+            $$x("//div[@class=\"catalog_block items row margin0 ajax_load block\"]//div[@class=\"" +
+                    "col-m-20 col-lg-3 col-md-4 col-sm-6 item item_block\"]");
+    ElementsCollection itemsWish =
+            $$x("//div[@class=\"catalog_block items row margin0 ajax_load block\"]//div[@class=\"" +
+                    "col-m-20 col-lg-3 col-md-4 col-sm-6 item item_block\"]//div[@class=\"wish_item_button\"]");
+    ElementsCollection itemsPrice =
+            $$x("//div[@class=\"catalog_block items row margin0 ajax_load block\"]//div[@class=\"" +
+                    "col-m-20 col-lg-3 col-md-4 col-sm-6 item item_block\"]//span[@class=\"price_value\"]");
     SelenideElement basket =
             $x("//div[@class=\"wrap_icon inner-table-block baskets big-padding\"]//a[@href=\"/basket/\"]");
 
@@ -39,13 +42,14 @@ public class MainPage {
         SelenideElement magnifier = $x("//i[@class=\"svg svg-search svg-black\"]");
         magnifier.click();
     }
-    public ElementsCollection getSubTabs(SelenideElement tab) {
-        return tab.$$x("//div[@class=\"col-m-20 col-lg-3 col-md-4 col-sm-6 item item_block\"]");
-    }
-    public void clickBasket() {
-        SelenideElement postponeGoods =
-                $x("//div[@id=\"bx_3966226736_131920_HIT\"]//span[@title=\"Отложить\"]");
-        postponeGoods.click();
+
+    @Step("Навести курсор на иконку \"Отложено\"")
+    public void hoverPostponeGoods(String price) {
+        ElementsCollection postponeGoods =
+        $$x("//div[@class=\"wrap_icon inner-table-block baskets big-padding\"]//a[@href=\"/basket/#delayed\"]");
+        postponeGoods.get(0).shouldBe(Condition.visible).hover();
+        //postponeGoods.get(0).getAttribute("title")
+        postponeGoods.get(0).shouldBe(Condition.attribute(title(), "В отложенных товаров на " + price + " руб."));
     }
 
 }

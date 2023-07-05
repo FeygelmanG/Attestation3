@@ -104,26 +104,30 @@ public class AptekaEconomTest extends WebTest {
             "текст при наведении на кнопку отложить")
     @Feature("Отложить товар")
     public void shouldPostponeGoods() {
-        ElementsCollection itemsBlock = mainPage.itemsBlock;
 
         step("Проверить, что выбранный элемент в наличии по блоку \"Выбор покупателей\". Т.е есть хотя бы 1 " +
                 "элемент в блоке и у него указано\"В наличии\"", () -> {
-//            itemsBlock.shouldBe(CollectionCondition.size(1));
+            ElementsCollection itemsBlock = mainPage.itemsBlock;
+            itemsBlock.shouldHave(CollectionCondition.sizeGreaterThan(1));
             itemsBlock.get(0).shouldHave(text("В наличии"));
         });
 
-        step("Кликнуть у первого элементв в блоке \"Выбор покупателей\" на кнопку \"Отложить\"", () -> {
-//            ElementsCollection subTabs = mainPage.getSubTabs(itemsBlock.get(0));
-//            subTabs.get(0).click();
-            itemsBlock.get(0).click();
+        step("Кликнуть у первого элемент в блоке \"Выбор покупателей\" на кнопку \"Отложить\"", () -> {
+            ElementsCollection itemsWish = mainPage.itemsWish;
+            itemsWish.get(0).click();
         });
+
+//        step("Сохранить цену первого товара в блоке \"Выбор покупателей\", навести курсор на иконку \"Отложено\"" +
+//                ", должен появляется корректный текст о сумме товаров в избранном", () -> {
+//            ElementsCollection itemsPrice = mainPage.itemsPrice;
+//            mainPage.hoverPostponeGoods(itemsPrice.get(0).text());
+//        });
+
         step("Перейти в корзину ", () -> mainPage.basket.click());
 
-//        step("Получить существующий товар ", () -> {
-//            ElementsCollection itemsBasket = basketPage.itemsBasket;
-//            itemsBasket.shouldBe(CollectionCondition.size(1));
-//            itemsBasket.get(0).shouldHave(text("Товар отложен"));
-//        });
+        step("Проверить, что отложенный товар не учитывается в итоговой сумме заказа ", () -> {
+            basketPage.itemBasket.shouldBe(text("0 руб."));
+        });
 
     }
 }
