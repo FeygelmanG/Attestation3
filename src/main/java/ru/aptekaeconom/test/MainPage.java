@@ -45,11 +45,18 @@ public class MainPage {
 
     @Step("Навести курсор на иконку \"Отложено\"")
     public void hoverPostponeGoods(String price) {
+        ElementsCollection postpone =
+        $$x("//div[@class=\"wrap_icon inner-table-block baskets big-padding\"]//a[@href=" +
+                "\"/basket/#delayed\"]");
+        postpone.get(0).shouldBe(Condition.visible).hover();
+        postpone.get(0).shouldBe(Condition.attribute("title", "В отложенных товаров " +
+                "на " + price + " руб."));
+    }
+    @Step("Считать наименование отложенного товара")
+    public String getNamePostponeGood() {
         ElementsCollection postponeGoods =
-        $$x("//div[@class=\"wrap_icon inner-table-block baskets big-padding\"]//a[@href=\"/basket/#delayed\"]");
-        postponeGoods.get(0).shouldBe(Condition.visible).hover();
-        //postponeGoods.get(0).getAttribute("title")
-        postponeGoods.get(0).shouldBe(Condition.attribute(title(), "В отложенных товаров на " + price + " руб."));
+                $$x("//div[@class=\"catalog_block items row margin0 ajax_load block\"]//div[@class=\"col-m-20 col-lg-3 col-md-4 col-sm-6 item item_block\"]//img[@class=\"noborder ls-is-cached lazyloaded\"]");
+        return postponeGoods.get(0).getAttribute("title");
     }
 
 }
