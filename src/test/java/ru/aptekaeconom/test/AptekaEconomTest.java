@@ -73,24 +73,30 @@ public class AptekaEconomTest extends WebTest {
     // Поиск ищет товары только по полному совпадению слова или словосочетания. В поисковой выдаче отображается по 5
     // товаров на странице
     @Test
-    @DisplayName("Поиск товаров по полному совпадению, вывод 5 позиций")
+    @DisplayName("Поиск товаров по полному совпадению")
     @Feature("Поиск товаров")
     public void shouldSearchProductsOnlyByExact() {
 
-        step("Ввести \"нурофен\" в поле поиска", () -> mainPage.inputSearchText("нурофен"));
-
-        step("Проверить, что в поисковой выдаче отображается по 5 товаров на странице.", () -> {
-            ElementsCollection itemsSearch = searchPage.itemsSearch;
-            itemsSearch.shouldBe(CollectionCondition.size(5));
-        });
-
-        step("Ввести \"фен\" в поле поиска", () -> mainPage.inputSearchText("нурофен"));
+        step("Ввести \"фен\" в поле поиска", () -> mainPage.inputSearchText("фен"));
 
         step("Проверить, что поиск ищет товары только по полному совпадению слова или словосочетания.", () -> {
             ElementsCollection itemsSearch = searchPage.itemsSearch;
             for (SelenideElement element : itemsSearch) {
                 element.shouldHave(text("фен"));
             }
+        });
+    }
+
+    @Test
+    @DisplayName("Поиск товаров, вывод 5 позиций")
+    @Feature("Поиск товаров")
+    public void shouldSearchProductsFivePosition() {
+
+        step("Ввести \"нурофен\" в поле поиска", () -> mainPage.inputSearchText("нурофен"));
+
+        step("Проверить, что в поисковой выдаче отображается по 5 товаров на странице.", () -> {
+            ElementsCollection itemsSearch = searchPage.itemsSearch;
+            itemsSearch.shouldBe(CollectionCondition.size(5));
         });
     }
 

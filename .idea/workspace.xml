@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="add Test3 (not all)_2">
+    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="add Test3 + Allure report">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aptekaeconom/test/BasketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aptekaeconom/test/BasketPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aptekaeconom/test/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aptekaeconom/test/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/Screenshot 2023-07-06 224118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/Screenshot 2023-07-06 224225.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/AptekaEconomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/AptekaEconomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" afterDir="false" />
     </list>
@@ -91,7 +93,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Attestation3 [allureServe]">
+  <component name="RunManager" selected="Gradle.AptekaEconomTest.shouldSearchProductsFivePosition">
     <configuration name="AptekaEconomTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,6 +140,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AptekaEconomTest.shouldSearchProductsFivePosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest.shouldSearchProductsFivePosition&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="AptekaEconomTest.shouldSearchProductsOnlyByExact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -157,27 +182,6 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Attestation3 [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="allureReport" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -205,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AptekaEconomTest.shouldSearchProductsFivePosition" />
         <item itemvalue="Gradle.Attestation3 [allureServe]" />
         <item itemvalue="Gradle.AptekaEconomTest" />
-        <item itemvalue="Gradle.AptekaEconomTest.shouldPostponeGoods" />
-        <item itemvalue="Gradle.Attestation3 [allureReport]" />
         <item itemvalue="Gradle.AptekaEconomTest.shouldSearchProductsOnlyByExact" />
+        <item itemvalue="Gradle.AptekaEconomTest.shouldPostponeGoods" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688574884955</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add Test3 + Allure report">
+      <created>1688673093801</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688673093801</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,7 +332,8 @@
     <MESSAGE value="add Test2, Test3 (not all)" />
     <MESSAGE value="add Test3 (not all)" />
     <MESSAGE value="add Test3 (not all)_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Test3 (not all)_2" />
+    <MESSAGE value="add Test3 + Allure report" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Test3 + Allure report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -13,6 +13,11 @@
    Отложенный товар не учитывается в итоговой сумме заказа
 
 ## Аллюр отчет
-
-![alt](files/Screenshot 2023-07-06 224118.png)
-![alt](files/Screenshot 2023-07-06 224225.png)
+![alt](files/Screenshot 2023-07-07 212233.png)
+### 1. Тест 1 - Каталог
+![alt](files/Screenshot 2023-07-07 212409.png)
+### 2. Тест 2 - Поиск
+![alt](files/Screenshot 2023-07-07 212328.png)
+![alt](files/Screenshot 2023-07-07 212348.png)
+### 3. Тест 3 - Отложить
+![alt](files/Screenshot 2023-07-07 212425.png)
