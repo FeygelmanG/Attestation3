@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="add remote">
+    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="add гредл">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688754904057</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add гредл">
+      <created>1688822199051</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688822199051</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,7 +341,8 @@
     <MESSAGE value="add Test3 (not all)_2" />
     <MESSAGE value="add Test3 + Allure report" />
     <MESSAGE value="add remote" />
-    <option name="LAST_COMMIT_MESSAGE" value="add remote" />
+    <MESSAGE value="add гредл" />
+    <option name="LAST_COMMIT_MESSAGE" value="add гредл" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
