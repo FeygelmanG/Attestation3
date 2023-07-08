@@ -20,8 +20,7 @@ public class WebTest {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setBrowserName("chrome");
             capabilities.setCapability("enableVNC:", true);
-//            WebDriver driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(), capabilities);
-            WebDriver driver = new RemoteWebDriver(URI.create("http://chrome:4444/wd/hub").toURL(), capabilities);
+            WebDriver driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(), capabilities);
             setWebDriver(driver);
         } else {
             Configuration.browser = "chrome";
