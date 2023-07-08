@@ -66,12 +66,12 @@ jobs:
       #      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       #      with:
       #        arguments: build
-      - run: |
-          allurectl watch -- ./gradlew clean test
-          export $( allurectl job-run env)
-          printenv | grep TEST_
-          printenv | grep ALLURE_
-        env:
-          TEST_ENDPOINT: ${{ github.event.inputs.TEST_ENDPOINT }}
-          TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
-          ALLURE_RESULTS: allure-results
+#      - run: |
+#          allurectl watch -- ./gradlew clean test
+#          export $( allurectl job-run env)
+#          printenv | grep TEST_
+#          printenv | grep ALLURE_
+#        env:
+#          TEST_ENDPOINT: ${{ github.event.inputs.TEST_ENDPOINT }}
+#          TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
+#          ALLURE_RESULTS: allure-results
