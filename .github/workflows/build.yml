@@ -9,7 +9,7 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: ["master"], ["attestation3"]
+    branches: ["master"]
   workflow_dispatch:
     inputs:
       TEST_ENDPOINT:
