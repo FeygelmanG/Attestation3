@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="add Test3 + Allure report">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="add remote">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Screenshot 2023-07-06 224118.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Screenshot 2023-07-06 224225.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/AptekaEconomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/AptekaEconomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688673093801</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add remote">
+      <created>1688754904057</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688754904057</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -333,7 +334,8 @@
     <MESSAGE value="add Test3 (not all)" />
     <MESSAGE value="add Test3 (not all)_2" />
     <MESSAGE value="add Test3 + Allure report" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Test3 + Allure report" />
+    <MESSAGE value="add remote" />
+    <option name="LAST_COMMIT_MESSAGE" value="add remote" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
