@@ -61,7 +61,7 @@ jobs:
 #          allure-token: ${{ secrets.ALLURE_TOKEN }}
 #          allure-project-id: ${{ secrets.ALLURE_PROJECT_ID }}
 #      - name: Prepare TestPlan
-        run: allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
+#        run: allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
       #    - name: Build with Gradle
       #      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       #      with:
