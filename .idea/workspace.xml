@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="fix yaml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +56,11 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -80,8 +86,8 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Attestation3 [test]">
-    <configuration name="AptekaEconomTest.shouldSearchProductsFivePosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AptekaEconomTest">
+    <configuration name="AptekaEconomTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -94,7 +100,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest.shouldSearchProductsFivePosition&quot;" />
+            <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AptekaEconomTest" />
+        <item itemvalue="Gradle.Attestation3 [build]" />
         <item itemvalue="Gradle.Attestation3 [testClasses]" />
         <item itemvalue="Gradle.Attestation3 [test]" />
         <item itemvalue="Gradle.Attestation3 [clean]" />
-        <item itemvalue="Gradle.Attestation3 [build]" />
-        <item itemvalue="Gradle.AptekaEconomTest.shouldSearchProductsFivePosition" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +213,21 @@
       <option name="presentableId" value="Default" />
       <updated>1688203730040</updated>
     </task>
+    <task id="LOCAL-00001" summary="fix yaml">
+      <created>1688893361362</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688893361362</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix yaml">
+      <created>1688893534139</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688893534139</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +240,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix yaml" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
