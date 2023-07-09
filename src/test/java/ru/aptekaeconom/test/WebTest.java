@@ -12,6 +12,8 @@ public class WebTest {
 
     @BeforeAll
     public static void setDriver() throws MalformedURLException {
+        boolean isRemote = true;
+        if (isRemote == true) {
             Configuration.timeout = 6000;
             Configuration.browser = "chrome";
 
@@ -20,19 +22,8 @@ public class WebTest {
                     URI.create("http://localhost:4444/wd/hub").toURL(), options
             );
             setWebDriver(remoteWebDriver);
-
-//            Configuration.baseUrl = "https://aptekaeconom.com";
-            //Configuration.pageLoadStrategy= "eager";
-//            open("/");
-//        boolean isRemote = true;
-//        if (isRemote == true) {
-//            DesiredCapabilities capabilities = new DesiredCapabilities();
-//            capabilities.setBrowserName("chrome");
-//            capabilities.setCapability("enableVNC:", true);
-//            WebDriver driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(), capabilities);
-//            setWebDriver(driver);
-//        } else {
-//            Configuration.browser = "chrome";
-//        }
+        } else {
+            Configuration.browser = "chrome";
+        }
     }
 }
