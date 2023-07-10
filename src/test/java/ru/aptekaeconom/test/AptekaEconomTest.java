@@ -1,9 +1,6 @@
 package ru.aptekaeconom.test;
 
-import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.*;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeEach;
@@ -41,7 +38,11 @@ public class AptekaEconomTest extends WebTest {
     @Story("Подкатегории")
     public void shouldOpenCatalogTab() {
 
-        step("Навести курсор на каталог \"Гигиена\"", () -> mainPage.hoverCatalog("Гигиена"));
+        step("Навести курсор на каталог \"Гигиена\"", () -> {
+            //mainPage.hoverCatalog("Гигиена");
+            SelenideElement dropdownToggle = $x("//div[contains(text(),\"Гигиена\")]");
+            dropdownToggle.shouldBe(Condition.visible).hover();
+        });
 
 //        step("Кликнуть на подкатегорию \"Детская косметика, гигиена, уход\" в каталоге \"Гигиена\"", () ->
 //                mainPage.clickSubCatalog("Гигиена", "Детская косметика, гигиена, уход"));
