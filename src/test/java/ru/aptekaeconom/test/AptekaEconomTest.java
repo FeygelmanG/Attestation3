@@ -140,4 +140,15 @@ public class AptekaEconomTest extends WebTest {
         });
 
     }
+    @Test
+    @DisplayName("О")
+    @Feature("О")
+    public void shouldO() {
+        ElementsCollection itemsBlock = mainPage.itemsBlock;
+
+        step("G", () -> {
+            itemsBlock.shouldHave(CollectionCondition.sizeGreaterThan(1));
+        });
+
+    }
 }
