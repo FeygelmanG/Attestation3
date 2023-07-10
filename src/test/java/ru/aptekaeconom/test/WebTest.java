@@ -24,6 +24,8 @@ public class WebTest {
                 URI.create("http://localhost:4444/wd/hub").toURL(), options
         );
         setWebDriver(remoteWebDriver);
+        Configuration.browser = "chrome";
+
     }
 //        String isRemote = System.getenv("IS_REMOTE");
 //        if (Objects.equals(isRemote, "true")) {
