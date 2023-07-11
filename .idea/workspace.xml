@@ -97,7 +97,7 @@
       <recent name="ru.aptekaeconom.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Attestation3 [allureReport]">
+  <component name="RunManager" selected="Gradle.Attestation3 [allureServe]">
     <configuration name="AptekaEconomTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -207,8 +207,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Attestation3 [allureReport]" />
         <item itemvalue="Gradle.Attestation3 [allureServe]" />
+        <item itemvalue="Gradle.Attestation3 [allureReport]" />
         <item itemvalue="Gradle.AptekaEconomTest" />
         <item itemvalue="Gradle.Attestation3 [build]" />
         <item itemvalue="Gradle.Attestation3 [testClasses]" />
@@ -357,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689101742054</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix yaml">
+      <created>1689101824794</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1689101824794</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
