@@ -21,7 +21,7 @@ public class WebTest {
                 URI.create("http://localhost:4444/wd/hub").toURL(), options
         );
         setWebDriver(remoteWebDriver);
-        Configuration.browser = "chrome";
+        //onfiguration.browser = "chrome";
 
     }
 }
