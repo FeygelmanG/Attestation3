@@ -1,0 +1,149 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,7 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="fix yaml" />
++    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="fix yaml">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -38,6 +40,12 @@
+                 <item name="Attestation3" type="f1a62948:ProjectNode" />
+                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                 <item name="build" type="c8890929:TasksNode$1" />
++              </path>
++              <path>
++                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
++                <item name="Attestation3" type="f1a62948:ProjectNode" />
++                <item name="Tasks" type="e4a08cd1:TasksNode" />
++                <item name="verification" type="c8890929:TasksNode$1" />
+               </path>
+             </expand>
+             <select />
+@@ -84,7 +92,7 @@
+     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+   }
+ }</component>
+-  <component name="RunManager" selected="Gradle.Attestation3 [testClasses]">
++  <component name="RunManager" selected="Gradle.Attestation3 [test]">
+     <configuration name="AptekaEconomTest.shouldSearchProductsFivePosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+@@ -108,7 +116,7 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="Attestation3 [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="Attestation3 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+@@ -119,7 +127,7 @@
+         </option>
+         <option name="taskNames">
+           <list>
+-            <option value="allureServe" />
++            <option value="build" />
+           </list>
+         </option>
+         <option name="vmOptions" />
+@@ -129,7 +137,7 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="Attestation3 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="Attestation3 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+@@ -140,7 +148,7 @@
+         </option>
+         <option name="taskNames">
+           <list>
+-            <option value="build" />
++            <option value="clean" />
+           </list>
+         </option>
+         <option name="vmOptions" />
+@@ -150,7 +158,7 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="Attestation3 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="Attestation3 [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+@@ -161,7 +169,7 @@
+         </option>
+         <option name="taskNames">
+           <list>
+-            <option value="clean" />
++            <option value="testClasses" />
+           </list>
+         </option>
+         <option name="vmOptions" />
+@@ -171,7 +179,7 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="Attestation3 [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="Attestation3 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+@@ -182,7 +190,7 @@
+         </option>
+         <option name="taskNames">
+           <list>
+-            <option value="testClasses" />
++            <option value="test" />
+           </list>
+         </option>
+         <option name="vmOptions" />
+@@ -194,11 +202,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Gradle.Attestation3 [test]" />
+         <item itemvalue="Gradle.Attestation3 [testClasses]" />
+         <item itemvalue="Gradle.Attestation3 [build]" />
+         <item itemvalue="Gradle.Attestation3 [clean]" />
+         <item itemvalue="Gradle.AptekaEconomTest.shouldSearchProductsFivePosition" />
+-        <item itemvalue="Gradle.Attestation3 [allureServe]" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -379,7 +387,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1688835650373</updated>
+     </task>
+-    <option name="localTasksCounter" value="25" />
++    <task id="LOCAL-00025" summary="fix yaml">
++      <created>1688835867380</created>
++      <option name="number" value="00025" />
++      <option name="presentableId" value="LOCAL-00025" />
++      <option name="project" value="LOCAL" />
++      <updated>1688835867380</updated>
++    </task>
++    <task id="LOCAL-00026" summary="fix yaml">
++      <created>1688836175501</created>
++      <option name="number" value="00026" />
++      <option name="presentableId" value="LOCAL-00026" />
++      <option name="project" value="LOCAL" />
++      <updated>1688836175501</updated>
++    </task>
++    <option name="localTasksCounter" value="27" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
