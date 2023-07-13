@@ -6,6 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="fix yaml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1087709a-0af2-4a0a-9843-dadce1dbc895-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/10fbe6a7-d8ff-4499-ab0b-74d162c95a54-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/29e17aa8-8463-44ea-a198-b25edc43cfda-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/31e1432f-a287-4b14-a2b9-ff349df0256b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/59f07667-1771-4514-bd1b-5f574164c142-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5a29fbcc-a881-4ae9-9654-8a0f448f1c58-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/65cfec7a-7ea3-45ad-866d-8976296328cf-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/67744479-6025-4bfa-99b4-40e59205ba54-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/72db3a68-6c87-41f9-9038-94b1b052b025-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9cedc2b0-2a15-43a7-bd33-9bb26ba77c79-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a4a27337-e320-46a2-aa6a-f81949753597-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b78eaa32-43f6-4372-a9b0-360a4646b49c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bdda7278-2081-48c8-bc54-dc5895af14a5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c8c10d59-6a92-4e11-bbf4-25812d2069f9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e4f3362c-6c03-4eb0-807c-c09b0016e550-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fdddc295-846c-4c4d-92d6-43cefd8e744b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,9 +225,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Attestation3 [allureServe]" />
+        <item itemvalue="Gradle.Attestation3 [build]" />
         <item itemvalue="Gradle.Attestation3 [allureReport]" />
         <item itemvalue="Gradle.AptekaEconomTest" />
-        <item itemvalue="Gradle.Attestation3 [build]" />
         <item itemvalue="Gradle.Attestation3 [testClasses]" />
       </list>
     </recent_temporary>
@@ -364,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689101824794</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix yaml">
+      <created>1689102131128</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1689102131128</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
