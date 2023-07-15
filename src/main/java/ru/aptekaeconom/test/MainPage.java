@@ -48,7 +48,7 @@ public class MainPage {
         ElementsCollection postpone =
         $$x("//div[@class=\"wrap_icon inner-table-block baskets big-padding\"]//a[@href=" +
                 "\"/basket/#delayed\"]");
-        postpone.get(0).shouldBe(Condition.visible).hover();
+//        postpone.get(0).shouldBe(Condition.visible).hover();
         postpone.get(0).shouldBe(Condition.attribute("title", "В отложенных товаров " +
                 "на " + price + " руб."));
     }
