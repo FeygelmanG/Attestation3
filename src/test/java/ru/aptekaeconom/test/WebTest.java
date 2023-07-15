@@ -18,6 +18,9 @@ public class WebTest {
     public static void setDriver() throws MalformedURLException {
         String isRemote = System.getenv("IS_REMOTE");
         if (Objects.equals(isRemote, "true")) {
+            Configuration.timeout = 6000;
+            Configuration.browser = "chrome";
+            Configuration.browserSize = "1366x768";
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setCapability("enableVNC:", true);
             WebDriver driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(), chromeOptions);
