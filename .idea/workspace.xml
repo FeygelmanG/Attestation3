@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="fix yaml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Новый текстовый документ.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/AptekaEconomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/AptekaEconomTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="fix yaml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,30 +95,7 @@
       <recent name="ru.aptekaeconom.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AptekaEconomTest.shouldOpenCatalogTab">
-    <configuration name="AptekaEconomTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.AptekaEconomTest.shouldPostponeGoods">
     <configuration name="AptekaEconomTest.shouldOpenCatalogTab" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -137,6 +110,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest.shouldOpenCatalogTab&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AptekaEconomTest.shouldPostponeGoods" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest.shouldPostponeGoods&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,7 +209,7 @@
       <ExternalSystemSettings>
         <option name="env">
           <map>
-            <entry key="IS_REMOTE" value="true" />
+            <entry key="IS_REMOTE" value="false" />
           </map>
         </option>
         <option name="executionName" />
@@ -237,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AptekaEconomTest.shouldPostponeGoods" />
         <item itemvalue="Gradle.AptekaEconomTest.shouldOpenCatalogTab" />
         <item itemvalue="Gradle.Attestation3 [allureServe]" />
         <item itemvalue="Gradle.Attestation3 [build]" />
         <item itemvalue="Gradle.Attestation3 [allureReport]" />
-        <item itemvalue="Gradle.AptekaEconomTest" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689440837299</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fix yaml">
+      <created>1689441897280</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1689441897280</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
