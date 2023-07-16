@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f89f54-b15b-4207-929a-4a4436fd7a1d" name="Changes" comment="fix yaml">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/aptekaeconom/test/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +97,8 @@
       <recent name="ru.aptekaeconom.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Attestation3 [allureServe]">
-    <configuration name="AptekaEconomTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AptekaEconomTest.shouldPostponeGoods">
+    <configuration name="AptekaEconomTest.shouldOpenCatalogTab" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +111,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest&quot;" />
+            <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest.shouldOpenCatalogTab&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AptekaEconomTest.shouldPostponeGoods" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.aptekaeconom.test.AptekaEconomTest.shouldPostponeGoods&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,18 +207,23 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Attestation3 [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Attestation3 [test]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="IS_REMOTE" value="true" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="testClasses" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AptekaEconomTest.shouldPostponeGoods" />
+        <item itemvalue="Gradle.AptekaEconomTest.shouldOpenCatalogTab" />
         <item itemvalue="Gradle.Attestation3 [allureServe]" />
         <item itemvalue="Gradle.Attestation3 [build]" />
         <item itemvalue="Gradle.Attestation3 [allureReport]" />
-        <item itemvalue="Gradle.AptekaEconomTest" />
-        <item itemvalue="Gradle.Attestation3 [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +406,112 @@
       <option name="project" value="LOCAL" />
       <updated>1689266745193</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix yaml">
+      <created>1689266824521</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1689266824521</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix yaml">
+      <created>1689268396889</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1689268396889</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix yaml">
+      <created>1689440351806</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1689440351806</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fix yaml">
+      <created>1689440837299</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1689440837299</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix yaml">
+      <created>1689441897280</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1689441897280</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fix yaml">
+      <created>1689442498610</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1689442498610</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix yaml">
+      <created>1689442737324</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1689442737324</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fix yaml">
+      <created>1689442951790</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1689442951790</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fix yaml">
+      <created>1689443353525</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1689443353525</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix yaml">
+      <created>1689444314246</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1689444314246</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix yaml">
+      <created>1689444686682</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1689444686682</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fix yaml">
+      <created>1689444960038</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1689444960038</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fix yaml">
+      <created>1689445898500</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1689445898500</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix yaml">
+      <created>1689523779486</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1689523779486</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix yaml">
+      <created>1689524432460</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1689524432460</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

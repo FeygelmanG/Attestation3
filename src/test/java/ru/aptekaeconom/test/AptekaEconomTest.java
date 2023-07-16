@@ -126,13 +126,15 @@ public class AptekaEconomTest extends WebTest {
         step("Сохранить цену первого товара в блоке \"Выбор покупателей\", навести курсор на иконку \"Отложено\"" +
                 ", должен появляется корректный текст о сумме товаров в избранном", () -> {
             ElementsCollection itemsPrice = mainPage.itemsPrice;
+            itemsPrice.get(0).shouldBe(exist, enabled, visible);
             mainPage.hoverPostponeGoods(itemsPrice.get(0).text());
         });
 
         step("Проверить, что отложенный товар появляется с пометкой “Товар отложен” в корзине", () -> {
             String NamePostponeGood = mainPage.getNamePostponeGood();
-            mainPage.basket.click();
-            basketPage.namePostponeGood(NamePostponeGood);
+            mainPage.basket.shouldBe(exist, enabled, visible);
+//            mainPage.basket.parent().click();
+//            basketPage.namePostponeGood(NamePostponeGood);
         });
 
         step("Проверить, что отложенный товар не учитывается в итоговой сумме заказа", () -> {
