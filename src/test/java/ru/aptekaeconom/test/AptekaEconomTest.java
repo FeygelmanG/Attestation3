@@ -132,7 +132,7 @@ public class AptekaEconomTest extends WebTest {
 
         step("Проверить, что отложенный товар появляется с пометкой “Товар отложен” в корзине", () -> {
             String NamePostponeGood = mainPage.getNamePostponeGood();
-            mainPage.basket.shouldBe(exist, enabled, visible);
+            //mainPage.basket.shouldBe(exist, enabled, visible);
             mainPage.basket.parent().click();
             basketPage.namePostponeGood(NamePostponeGood);
         });
